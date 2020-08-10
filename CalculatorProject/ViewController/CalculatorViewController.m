@@ -134,7 +134,7 @@
 {
     NSString *number = _m_tfDisplay.text;
     int num = [number intValue];
-    if ([number containsString:@"."] || [number containsString:@"+"] || [number containsString:@"-"] || [number containsString:@"x"] || [number containsString:@"÷"] || (num > 13))
+    if ([number containsString:@"."] || [number containsString:@"+"] || [number containsString:@"-"] || [number containsString:@"x"] || [number containsString:@"÷"] || (num > 12))
     {
         _m_tfDisplay.text = @"不是數字";
         return;
