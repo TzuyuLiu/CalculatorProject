@@ -133,7 +133,8 @@
 - (IBAction)ClickfactorialButton:(UIButton *)sender
 {
     NSString *number = _m_tfDisplay.text;
-    if ([number containsString:@"."] || [number containsString:@"+"] || [number containsString:@"-"] || [number containsString:@"x"] || [number containsString:@"÷"])
+    int num = [number intValue];
+    if ([number containsString:@"."] || [number containsString:@"+"] || [number containsString:@"-"] || [number containsString:@"x"] || [number containsString:@"÷"] || (num > 13))
     {
         _m_tfDisplay.text = @"不是數字";
         return;
